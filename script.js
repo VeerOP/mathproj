@@ -37,9 +37,9 @@ roll.addEventListener('click', function () {
 
     dice.src = `dice-${num}.png`;
     dice2.src = `dice-${num2}.png`;
-    document.getElementById(`current--0`).textContent = num2 + num;
+    
   }
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < n1.length; i++) {
     if ((n1[i] + n2[i]) % 2 == 0) {
       evensumCount += 1;
     } else {
