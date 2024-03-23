@@ -160,23 +160,21 @@ main {
 .btn:focus {
   outline: none;
 }
-
-.dice {
-  position: absolute;
-  left: 40%;
-  top: 16.5rem;
-  transform: translateX(-40%);
-  height: 10rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+.diceContainer{
+  display: flex;
 }
-.dice2 {
-  float: right;
+
+.dice2, .dice {
+  /* flex-direction: ; */
   position: absolute;
   left: 60%;
   top: 16.5rem;
   transform: translateX(-70%);
   height: 10rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.dice{
+  left:40%
 }
 .player--winner {
   background-color: #2f2f2f;
@@ -190,3 +188,4 @@ main {
 .hidden{
   display:none
 }
+
