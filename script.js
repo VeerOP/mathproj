@@ -15,6 +15,7 @@ const roll = document.querySelector('.btn--roll');
 // const newbtn = document.querySelector('.btn--new');
 // const hold = document.querySelector('.btn--hold');
 // let currentScore = 0;
+let rolled=0
 let evensumCount = 0;
 let oddsumCount = 0;
 let Gs7 = 0;
@@ -27,6 +28,7 @@ let play = true;
 let n1 = [];
 let n2 = [];
 roll.addEventListener('click', function () {
+  
   for (let k = 0; k < 10; k++) {
     let num = Math.trunc(Math.random() * 6) + 1;
     let num2 = Math.trunc(Math.random() * 6) + 1;
@@ -39,7 +41,7 @@ roll.addEventListener('click', function () {
     dice2.src = `dice-${num2}.png`;
     
   }
-  for (let i = 0; i < n1.length; i++) {
+  for (let i = rolled; i < n1.length; i++) {
     if ((n1[i] + n2[i]) % 2 == 0) {
       evensumCount += 1;
     } else {
@@ -83,7 +85,7 @@ roll.addEventListener('click', function () {
   document.getElementById(
     'L7'
   ).textContent = `Both numbers are lesser than 3= ${L7}`;
-  
+  rolled+=10
   // else {
   //   currentScore = 0;
   //   document
