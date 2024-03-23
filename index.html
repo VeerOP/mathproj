@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Probability Dice</h2>
+        <p class="score" id="score--0"></p>
+        <div class="current">
+          <p class="current-label"></p>
+          <p class="current-score" id="current--0"></p>
+        </div>
+        <button class="btn btn--roll">🎲 Roll dice</button>
+        <div class="questions">
+          <h2 id="evenSum">Sum is an even number=</h2>
+          <h2 id="oddSum">Sum is an odd number=</h2>
+          <h2 id="SumG7">Sum is greater than 7=</h2>
+          <h2 id="SumL7">Sum is less than 7=</h2>
+          <h2 id="evenBoth">Both numbers are even= </h2>
+          <h2 id="oddBoth">Both numbers are odd= </h2>
+          <h2 id="G7">Both numbers are greater than 3= </h2>
+          <h2 id="L7">Both numbers are less than 3= </h2>
+
+        </div>
+      </section>
+      <div class="diceContainer">
+        <img src="dice-5.png" alt="Playing dice" class="dice" />
+        <img src="dice-5.png" alt="Playing dice" class="dice2 hidden" />
+      </div>
+
+      
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
